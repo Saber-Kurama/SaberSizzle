@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>使用sizzle.js</title>
+ </head>
+ <body>
+   <style>
+       div > div.Aaron p span.red{
+            color:red;
+       }
+  </style>
+
+  <div id="ss">
+    <div class="Aaron">
+        <p><span>s1</span></p>
+        <p><span>s2</span></p>
+        <p><span>s3</span></p>
+        <p><span class='red'>s4</span></p>
+    </div>
+    <div>
+    	<div>xxxx </div>
+    	<div>
+    		<input />
+    	</div>
+    </div>
+  </div>
+ 	<script type="text/javascript" src= "lib/sizzle.js"></script>
+ 	<script type="text/javascript" src= "lib/sabersizzle.js"></script>
+ 	<script type="text/javascript">
+ 	var s = Sizzle('div > div.Aaron p span.red');
+ 	//debugger;
+ 	console.log(s);
+ 	// 先实现 单独的 这些
+ 	/*var ss = SaberSizzle ("#cc");
+ 	var ss1 = SaberSizzle ("cc");
+ 	var ss1= SaberSizzle (".cc");*/
+ 	//关于 
+ 	/*var xx = document.querySelectorAll("#ss > div");*/
+ 	debugger;
+ 	</script>
+ </body>
+ </html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>正则表达式--001</title>
+</head>
+<body>
+	<script type="text/javascript">
+	var reName = new RegExp("nowamagic");
+	//alert(reName);
+
+	var rquickExpr = /^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/;
+	var str = ' <div id=top></div>';
+	//var match = rquickExpr.exec(str);
+	//alert(rquickExpr.test(str));
+	//alert(rquickExpr.exec(str));
+	//var str1 = ' <div id=top></div><';
+	alert(rquickExpr.exec(str));
+	</script>
+</body>
+</html>
