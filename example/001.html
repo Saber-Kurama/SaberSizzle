@@ -15,7 +15,23 @@
 	//alert(rquickExpr.test(str));
 	//alert(rquickExpr.exec(str));
 	//var str1 = ' <div id=top></div><';
-	alert(rquickExpr.exec(str));
+	//alert(rquickExpr.exec(str));
+	var s = '\\' ;
+
+alert(s); // '\'
+
+var rs = '\\\\' ;
+
+var matches = s.match(new RegExp(rs));
+alert(matches.length);
+alert(matches[0]) // '\'
+var s = 'abcc' ;
+
+var rs = '((ab)(c))\\3' ;
+
+var matches = s.match(new RegExp(rs));
+
+alert(matches[0]) //abcc
 	</script>
 </body>
 </html>
